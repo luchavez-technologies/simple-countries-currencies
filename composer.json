@@ -1,0 +1,51 @@
+{
+    "name": "luchavez/simple-countries-currencies",
+    "description": "Countries and currencies API for Laravel.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "James Carlo Luchavez",
+            "email": "jamescarloluchavez@gmail.com",
+            "homepage": "https://www.linkedin.com/in/jsluchavez"
+        }
+    ],
+    "homepage": "https://github.com/luchmewep/simple-countries-currencies",
+    "keywords": ["Laravel", "SimpleCountriesCurrencies"],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "~8|~9",
+        "luchavez/starter-kit": "^1.0",
+        "pragmarx/countries": "^0.8.2"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~6|~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Luchavez\\SimpleCountriesCurrencies\\": "src/",
+            "Luchavez\\SimpleCountriesCurrencies\\Database\\Factories\\": "database/factories/",
+            "Luchavez\\SimpleCountriesCurrencies\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Luchavez\\SimpleCountriesCurrencies\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Luchavez\\SimpleCountriesCurrencies\\Providers\\SimpleCountriesCurrenciesServiceProvider"
+            ],
+            "aliases": {
+                "SimpleCountriesCurrencies": "Luchavez\\SimpleCountriesCurrencies\\Facades\\SimpleCountriesCurrencies"
+            }
+        },
+        "branch-alias": {
+            "dev-master": "1.0.x-dev",
+            "dev-develop": "1.0.x-dev"
+        }
+    }
+}
