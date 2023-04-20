@@ -58,7 +58,7 @@ class CurrencyController extends Controller
 
         event(new CurrencyCollectedEvent($data));
 
-        return customResponse()
+        return simpleResponse()
             ->data($data)
             ->message('Successfully collected record.')
             ->success()
@@ -81,7 +81,7 @@ class CurrencyController extends Controller
 
         event(new CurrencyCreatedEvent($model));
 
-        return customResponse()
+        return simpleResponse()
             ->data($model)
             ->message('Successfully created record.')
             ->success()
@@ -104,7 +104,7 @@ class CurrencyController extends Controller
 
         event(new CurrencyCreatedEvent($model));
 
-        return customResponse()
+        return simpleResponse()
             ->data($model)
             ->message('Successfully created record.')
             ->success()
@@ -124,7 +124,7 @@ class CurrencyController extends Controller
     {
         event(new CurrencyShownEvent($currency));
 
-        return customResponse()
+        return simpleResponse()
             ->data($currency)
             ->message('Successfully collected record.')
             ->success()
@@ -146,7 +146,7 @@ class CurrencyController extends Controller
 
         event(new CurrencyUpdatedEvent($currency));
 
-        return customResponse()
+        return simpleResponse()
             ->data($currency)
             ->message('Successfully updated record.')
             ->success()
@@ -168,7 +168,7 @@ class CurrencyController extends Controller
 
         event(new CurrencyUpdatedEvent($currency));
 
-        return customResponse()
+        return simpleResponse()
             ->data($currency)
             ->message('Successfully updated record.')
             ->success()
@@ -190,7 +190,7 @@ class CurrencyController extends Controller
 
         event(new CurrencyArchivedEvent($currency));
 
-        return customResponse()
+        return simpleResponse()
             ->data($currency)
             ->message('Successfully archived record.')
             ->success()
@@ -212,7 +212,7 @@ class CurrencyController extends Controller
 
         event(new CurrencyRestoredEvent($data));
 
-        return customResponse()
+        return simpleResponse()
             ->data($data)
             ->message('Successfully restored record.')
             ->success()

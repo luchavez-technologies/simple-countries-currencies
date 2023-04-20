@@ -58,7 +58,7 @@ class CountryController extends Controller
 
         event(new CountryCollectedEvent($data));
 
-        return customResponse()
+        return simpleResponse()
             ->data($data)
             ->message('Successfully collected record.')
             ->success()
@@ -81,7 +81,7 @@ class CountryController extends Controller
 
         event(new CountryCreatedEvent($model));
 
-        return customResponse()
+        return simpleResponse()
             ->data($model)
             ->message('Successfully created record.')
             ->success()
@@ -104,7 +104,7 @@ class CountryController extends Controller
 
         event(new CountryCreatedEvent($model));
 
-        return customResponse()
+        return simpleResponse()
             ->data($model)
             ->message('Successfully created record.')
             ->success()
@@ -124,7 +124,7 @@ class CountryController extends Controller
     {
         event(new CountryShownEvent($country));
 
-        return customResponse()
+        return simpleResponse()
             ->data($country)
             ->message('Successfully collected record.')
             ->success()
@@ -146,7 +146,7 @@ class CountryController extends Controller
 
         event(new CountryUpdatedEvent($country));
 
-        return customResponse()
+        return simpleResponse()
             ->data($country)
             ->message('Successfully updated record.')
             ->success()
@@ -168,7 +168,7 @@ class CountryController extends Controller
 
         event(new CountryUpdatedEvent($country));
 
-        return customResponse()
+        return simpleResponse()
             ->data($country)
             ->message('Successfully updated record.')
             ->success()
@@ -190,7 +190,7 @@ class CountryController extends Controller
 
         event(new CountryArchivedEvent($country));
 
-        return customResponse()
+        return simpleResponse()
             ->data($country)
             ->message('Successfully archived record.')
             ->success()
@@ -212,7 +212,7 @@ class CountryController extends Controller
 
         event(new CountryRestoredEvent($data));
 
-        return customResponse()
+        return simpleResponse()
             ->data($data)
             ->message('Successfully restored record.')
             ->success()
