@@ -3,25 +3,22 @@
 namespace Luchavez\SimpleCountriesCurrencies\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 use Luchavez\SimpleCountriesCurrencies\Events\Country\CountryArchivedEvent;
 use Luchavez\SimpleCountriesCurrencies\Events\Country\CountryCollectedEvent;
 use Luchavez\SimpleCountriesCurrencies\Events\Country\CountryCreatedEvent;
-// Model
 use Luchavez\SimpleCountriesCurrencies\Events\Country\CountryRestoredEvent;
-// Requests
 use Luchavez\SimpleCountriesCurrencies\Events\Country\CountryShownEvent;
 use Luchavez\SimpleCountriesCurrencies\Events\Country\CountryUpdatedEvent;
 use Luchavez\SimpleCountriesCurrencies\Http\Requests\Country\DeleteCountryRequest;
 use Luchavez\SimpleCountriesCurrencies\Http\Requests\Country\IndexCountryRequest;
 use Luchavez\SimpleCountriesCurrencies\Http\Requests\Country\RestoreCountryRequest;
 use Luchavez\SimpleCountriesCurrencies\Http\Requests\Country\ShowCountryRequest;
-// Events
 use Luchavez\SimpleCountriesCurrencies\Http\Requests\Country\StoreCountryRequest;
 use Luchavez\SimpleCountriesCurrencies\Http\Requests\Country\UpdateCountryRequest;
 use Luchavez\SimpleCountriesCurrencies\Models\Country;
 use Luchavez\StarterKit\Traits\HasTaggableCacheTrait;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
 
 /**
  * Class CountryController

@@ -2,9 +2,8 @@
 
 namespace Luchavez\SimpleCountriesCurrencies\Database\Factories;
 
-// Model
-use Luchavez\SimpleCountriesCurrencies\Models\Currency;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Luchavez\SimpleCountriesCurrencies\Models\Currency;
 
 /**
  * Class Currency

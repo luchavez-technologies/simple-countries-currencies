@@ -2,7 +2,7 @@
 
 namespace Luchavez\SimpleCountriesCurrencies\Http\Requests\CountryCurrency;
 
-use Luchavez\StarterKit\Requests\FormRequest;
+use Illuminate\Foundation\Http\FormRequest;
 
 /**
  * Class DeleteCountryCurrencyRequest

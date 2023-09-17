@@ -2,11 +2,11 @@
 
 namespace Luchavez\SimpleCountriesCurrencies\Models;
 
-use Luchavez\SimpleCountriesCurrencies\Traits\HasCountryFactoryTrait;
-use Luchavez\StarterKit\Traits\UsesUUIDTrait;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Luchavez\SimpleCountriesCurrencies\Traits\HasCountryFactoryTrait;
+use Luchavez\StarterKit\Traits\UsesUUIDTrait;
 
 /**
  * Class Country

@@ -2,10 +2,9 @@
 
 namespace Luchavez\SimpleCountriesCurrencies\DataFactories;
 
+use Illuminate\Database\Eloquent\Builder;
 use Luchavez\SimpleCountriesCurrencies\Models\Currency;
 use Luchavez\StarterKit\Abstracts\BaseDataFactory;
-// Model
-use Illuminate\Database\Eloquent\Builder;
 
 /**
  * Class CurrencyDataFactory

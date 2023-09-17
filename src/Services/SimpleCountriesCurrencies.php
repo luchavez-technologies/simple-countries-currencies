@@ -2,11 +2,11 @@
 
 namespace Luchavez\SimpleCountriesCurrencies\Services;
 
+use Illuminate\Support\Collection;
 use Luchavez\SimpleCountriesCurrencies\Abstracts\BaseCountriesCurrenciesProvider;
 use Luchavez\SimpleCountriesCurrencies\CountriesCurrenciesProvider\PragmaRXCountriesCurrenciesProvider;
 use Luchavez\SimpleCountriesCurrencies\DataFactories\CountryDataFactory;
 use Luchavez\StarterKit\Traits\HasTaggableCacheTrait;
-use Illuminate\Support\Collection;
 
 /**
  * Class SimpleCountriesCurrencies
