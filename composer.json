@@ -1,6 +1,6 @@
 {
     "name": "luchavez/simple-countries-currencies",
-    "description": "Countries and currencies API for Laravel.",
+    "description": "Countries and currencies API for Laravel 8|9|10",
     "license": "MIT",
     "authors": [
         {

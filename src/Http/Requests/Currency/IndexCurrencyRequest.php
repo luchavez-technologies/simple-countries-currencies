@@ -2,7 +2,7 @@
 
 namespace Luchavez\SimpleCountriesCurrencies\Http\Requests\Currency;
 
-use Luchavez\StarterKit\Requests\FormRequest;
+use Illuminate\Foundation\Http\FormRequest;
 
 /**
  * Class IndexCurrencyRequest

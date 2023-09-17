@@ -56,7 +56,7 @@ class SimpleCountriesCurrenciesServiceProvider extends BaseStarterKitServiceProv
     {
         // Publishing the configuration file.
         $this->publishes([
-            __DIR__.'/../config/simple-countries-currencies.php' => config_path('simple-countries-currencies.php'),
+            __DIR__.'/../../config/simple-countries-currencies.php' => config_path('simple-countries-currencies.php'),
         ], 'simple-countries-currencies.config');
     }
 

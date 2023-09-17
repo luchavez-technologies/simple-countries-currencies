@@ -2,9 +2,9 @@
 
 namespace Luchavez\SimpleCountriesCurrencies\Traits;
 
-use Luchavez\SimpleCountriesCurrencies\Database\Factories\CountryFactory;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Luchavez\SimpleCountriesCurrencies\Database\Factories\CountryFactory;
 
 /**
  * Trait HasCountryFactoryTrait

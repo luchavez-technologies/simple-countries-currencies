@@ -2,12 +2,11 @@
 
 namespace Luchavez\SimpleCountriesCurrencies\DataFactories;
 
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 use Luchavez\SimpleCountriesCurrencies\Models\Country;
 use Luchavez\SimpleCountriesCurrencies\Models\Currency;
 use Luchavez\StarterKit\Abstracts\BaseDataFactory;
-// Model
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class CountryDataFactory
@@ -107,7 +106,7 @@ class CountryDataFactory extends BaseDataFactory
      * @param  string|null  $key
      * @return Model|Builder|null
      */
-    public function firstOrCreate(mixed $data = [], ?string $key = null): Model|Builder|null
+    public function firstOrCreate(mixed $data = [], string $key = null): Model|Builder|null
     {
         $country = parent::firstOrCreate($data, $key);
 

@@ -3,25 +3,22 @@
 namespace Luchavez\SimpleCountriesCurrencies\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 use Luchavez\SimpleCountriesCurrencies\Events\CountryCurrency\CountryCurrencyArchivedEvent;
 use Luchavez\SimpleCountriesCurrencies\Events\CountryCurrency\CountryCurrencyCollectedEvent;
 use Luchavez\SimpleCountriesCurrencies\Events\CountryCurrency\CountryCurrencyCreatedEvent;
-// Model
 use Luchavez\SimpleCountriesCurrencies\Events\CountryCurrency\CountryCurrencyRestoredEvent;
-// Requests
 use Luchavez\SimpleCountriesCurrencies\Events\CountryCurrency\CountryCurrencyShownEvent;
 use Luchavez\SimpleCountriesCurrencies\Events\CountryCurrency\CountryCurrencyUpdatedEvent;
 use Luchavez\SimpleCountriesCurrencies\Http\Requests\CountryCurrency\DeleteCountryCurrencyRequest;
 use Luchavez\SimpleCountriesCurrencies\Http\Requests\CountryCurrency\IndexCountryCurrencyRequest;
 use Luchavez\SimpleCountriesCurrencies\Http\Requests\CountryCurrency\RestoreCountryCurrencyRequest;
 use Luchavez\SimpleCountriesCurrencies\Http\Requests\CountryCurrency\ShowCountryCurrencyRequest;
-// Events
 use Luchavez\SimpleCountriesCurrencies\Http\Requests\CountryCurrency\StoreCountryCurrencyRequest;
 use Luchavez\SimpleCountriesCurrencies\Http\Requests\CountryCurrency\UpdateCountryCurrencyRequest;
 use Luchavez\SimpleCountriesCurrencies\Models\CountryCurrency;
 use Luchavez\StarterKit\Traits\HasTaggableCacheTrait;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
 
 /**
  * Class CountryCurrencyController
